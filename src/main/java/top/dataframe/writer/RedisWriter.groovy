@@ -65,7 +65,7 @@ class RedisWriter implements DataFrameWriter {
             jedis?.close()
         }
 
-        0
+        df.size()
     }
 
 }
