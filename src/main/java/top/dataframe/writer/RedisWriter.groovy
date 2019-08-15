@@ -8,7 +8,7 @@ import top.dataframe.DataFrame
 import top.dataframe.val.RedisInfoKey
 
 @CompileStatic
-class RedisWriter implements DataFrameWriter {
+class RedisWriter implements DataFrameWriter,Serializable {
     private Map<String, Object> connectInfo
     String prefix
     String key
